@@ -1,0 +1,138 @@
+@keyframes rotateUp {
+  0% {
+    transform: translateY(0) rotateY(0deg);
+  }
+  100% {
+    transform: translateY(-100vh) rotateY(360deg);
+  }
+}
+
+@keyframes rotateDown {
+  0% {
+    transform: translateY(0) rotateY(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotateY(360deg);
+  }
+}
+@keyframes rotateRight {
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  100% {
+    transform: translateX(100vw) rotateY(360deg);
+  }
+}
+
+@keyframes rotateCross {
+  0% {
+    transform: translate(-50%, -50%) rotateY(0deg);
+  }
+  100% {
+    transform: translate(50vw, 50vh) rotateY(360deg);
+  }
+}
+@keyframes rotateSecCross {
+  0% {
+    transform: translate(-50%, -50%) rotateY(360deg);
+  }
+  100% {
+    transform: translate(50vw, 50vh) rotateY(0deg);
+  }
+}
+@keyframes rotateX {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateZ {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.secAnimation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Make the container take up the full width */
+  height: 100%; /* Make the container take up the full height */
+  position: absolute; /* Position the container absolutely within the body */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 9;
+}
+.sec-ani-icons {
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 9;
+}
+.sec-ani-icons img {
+  width: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  z-index: 9;
+  transform-style: preserve-3d;
+}
+.sec-ani-icons:nth-child(1) {
+  animation-name: rotateUp;
+}
+
+.sec-ani-icons:nth-child(2) {
+  animation-name: rotateDown;
+}
+
+.sec-ani-icons:nth-child(3) {
+  animation-name: rotateRight;
+}
+
+.sec-ani-icons:nth-child(4) {
+  animation-name: rotateCross;
+}
+/* randdom */
+.sec-ani-icons:nth-child(5) {
+  animation-name: rotateX;
+}
+
+.sec-ani-icons:nth-child(6) {
+  animation-name: rotateY;
+  animation-name: rotateCross;
+}
+
+.sec-ani-icons:nth-child(7) {
+  animation-name: rotateZ;
+  animation-name: rotateUp;
+}
+
+.sec-ani-icons:nth-child(8) {
+  animation-name: rotateSecCross;
+  animation-name: rotateDown;
+}
+
+.sec-ani-icons:nth-child(9) {
+  animation-name: rotateUp;
+}
+
+.sec-ani-icons:nth-child(10) {
+  animation-name: rotateZ;
+}
